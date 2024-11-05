@@ -35,7 +35,7 @@ try:
         # Simulera temperaturvärde
         temperature = simulate_temperature()
         # Skapa ett JSON-meddelande
-        payload = json.dumps({"temperature": temperature})
+        payload = json.dumps({"value": temperature})
         # Skicka meddelandet till MQTT-topic
         client.publish(MQTT_TOPIC, payload)
         print(f"Skickade temperatur: {temperature}°C")
