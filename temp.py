@@ -11,7 +11,7 @@ MQTT_TOPIC = "0000/obj/simulate/temperature"  # Lägg till clientID och rätt to
 
 # Autentiseringsuppgifter
 MQTT_USER = "random"  # Lägg till rätt användarnamn
-MQTT_PASSWORD = "DNA_API-Keys"   # Lägg till rätt API-keys
+MQTT_PASSWORD = "DINA_API-Keys"   # Lägg till rätt API-keys
 
 # Skapa MQTT-klient och anslutningsinställningar
 client = mqtt.Client()
