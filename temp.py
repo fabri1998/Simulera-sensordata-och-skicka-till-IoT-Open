@@ -7,11 +7,11 @@ import paho.mqtt.client as mqtt
 # Inställningar för MQTT
 MQTT_BROKER = "lynx.iotopen.se"  # Ändra till rätt broker-adress för IoT-Open
 MQTT_PORT = 8883  # Standardport för MQTT över TLS
-MQTT_TOPIC = "1459/obj/simulate/temperature"  # Anpassa ämnet efter IoT-Open-konfigurationen
+MQTT_TOPIC = "0000/obj/simulate/temperature"  # Lägg till clientID och rätt topic_read från din "funktion"
 
 # Autentiseringsuppgifter
 MQTT_USER = "random"  # Lägg till rätt användarnamn
-MQTT_PASSWORD = "-j2ezzkX5Yr4.txOcOQYlYHrHjf55VqwgoM9cneh8ELm7M2eOVm7Rv.BtwnzQuN2"   # Lägg till rätt lösenord
+MQTT_PASSWORD = "DNA_API-Keys"   # Lägg till rätt API-keys
 
 # Skapa MQTT-klient och anslutningsinställningar
 client = mqtt.Client()
